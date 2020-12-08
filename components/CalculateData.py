@@ -1,5 +1,6 @@
 class CalculateData:
     candidates = []
+    results = {}
 
     def __init__(self, candidates):
         candidates.pop(0)
@@ -45,3 +46,4 @@ class CalculateData:
             }
 
         print(results)
+        self.results = results
