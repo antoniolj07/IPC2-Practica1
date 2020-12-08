@@ -1,11 +1,12 @@
 from components.ReadCSVFiles import Read
 
+
 class Main:
     def __init__(self):
-        self.printMenu()
+        self.print_menu()
 
-    def printMenu(self):
-        while (True):
+    def print_menu(self):
+        while True:
             print('''
 =================================================================================================================
                                         Welcome to Easy Solution App
