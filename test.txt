@@ -1,5 +1,8 @@
 Id, Nombre, Apellido, Edad, Puesto al que aplica, Pretension Salarial
-1, Jorge, Perez, 20, Gerente, 20000
-2, Antonio, Ordo;ez, 31, Empleado, 15000
-3, Erick, Gonzales, 19, Asistente, 5000
-1, Jorge, Perez, 20, Gerente, 20000
+1,Jorge,Perez,20,Gerente,20000
+2,Antonio,Ordo;ez,31,Empleado,15000
+1,Jorge,Perez,20,Gerente,20000
+3,Erick,Gonzales,19,Asistente,5000
+4,SHIT,gonzo,45,Recepcionista,4000
+5,Esteban,Molina,20,Gerente,20000
+6,Javier,Andres,25,Empleado,10000

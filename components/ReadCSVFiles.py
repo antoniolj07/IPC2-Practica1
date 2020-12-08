@@ -1,4 +1,6 @@
 class Read:
+    candidates = []
+
     def __init__(self):
         self.read_file()
 
@@ -7,7 +9,6 @@ class Read:
         rows = []
         with open(path, 'r') as f:
             lines = f.readlines()
-            print(lines)
             for line in lines:
                 row = ''
                 for x in range(len(line)):
@@ -60,7 +61,6 @@ class Read:
                     else:
                         e = 0
             candidates.append(candidate)
-
         valid_candidates = []
         i = 0
         for candidate in candidates:
@@ -86,5 +86,7 @@ edad:       {}
 puesto:     {}
 salario:    {}
             '''.format(candidate['id'], candidate['nombre'], candidate['apellido'], candidate['edad'], candidate['puesto'], candidate['salario']))
+
+        self.candidates = candidates
 
 

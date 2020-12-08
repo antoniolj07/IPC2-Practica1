@@ -1,7 +1,10 @@
 from components.ReadCSVFiles import Read
+from components.CalculateData import CalculateData
 
 
 class Main:
+    candidates = []
+
     def __init__(self):
         self.print_menu()
 
@@ -10,12 +13,12 @@ class Main:
             print('''
 =================================================================================================================
                                         Welcome to Easy Solution App
-Select any option:
+Select an option:
 1. Read CSV file
 2. Calculate data
 3. Generate JSON file
 4. Exit
-            ''')
+\n''')
             option = input()
             if option in '1':
                 self.readCSVFile()
@@ -28,11 +31,15 @@ Select any option:
                 break
 
     def readCSVFile(self):
-        print('read csv')
         file = Read()
+        self.candidates = file.candidates
 
     def calculateData(self):
         print('Calculate data')
+        if len(self.candidates) != 0:
+            calculate = CalculateData(self.candidates)
+        else:
+            print('There are no candidates')
 
     def generateJson(self):
         print('generate json')
