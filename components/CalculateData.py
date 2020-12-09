@@ -42,3 +42,18 @@ class CalculateData:
             }
         self.results = results
         print('Calculated!')
+
+    def evaluate_data(self):
+        valid_candidates = []
+        i = 0
+        for candidate in self.candidates:
+            if i == 0:
+                valid_candidates.append(candidate)
+            repeated = False
+            for candi in valid_candidates:
+                if candidate == candi:
+                    repeated = True
+            if not repeated:
+                valid_candidates.append(candidate)
+
+            i = i + 1

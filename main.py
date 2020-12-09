@@ -23,20 +23,22 @@ Select an option:
 \n''')
             option = input()
             if option in '1':
-                self.readCSVFile()
+                self.read_csv_file()
             elif option in '2':
-                self.calculateData()
+                self.calculate_data()
             elif option in '3':
-                self.generateJson()
+                self.generate_json()
             elif option in '4':
                 print('Bye bye')
                 break
+            else:
+                print('Please enter a valid option')
 
-    def readCSVFile(self):
+    def read_csv_file(self):
         file = Read()
         self.candidates = file.candidates
 
-    def calculateData(self):
+    def calculate_data(self):
         print('Calculate data')
         if len(self.candidates) != 0:
             calculate = CalculateData(self.candidates)
@@ -44,7 +46,7 @@ Select an option:
         else:
             print('There are no candidates!')
 
-    def generateJson(self):
+    def generate_json(self):
         if len(self.results.keys()) != 0:
             create = CreateFile(self.results)
         else:

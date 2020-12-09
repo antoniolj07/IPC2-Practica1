@@ -1,22 +1,52 @@
 {
-    "Gerente": {
-        "Candidatos": 2,
-        "Edad Promedio": 20.0,
-        "Pretension Salarial": 20000
-    },
-    "Empleado": {
-        "Candidatos": 2,
-        "Edad Promedio": 28.0,
-        "Pretension Salarial": 10000
-    },
-    "Asistente": {
+    "desarrollador": {
         "Candidatos": 1,
-        "Edad Promedio": 19.0,
+        "Edad Promedio": 23.0,
+        "Pretension Salarial": 25000
+    },
+    "carpintero": {
+        "Candidatos": 2,
+        "Edad Promedio": 45.0,
         "Pretension Salarial": 5000
     },
-    "Recepcionista": {
-        "Candidatos": 1,
-        "Edad Promedio": 45.0,
-        "Pretension Salarial": 4000
+    "repartidor": {
+        "Candidatos": 2,
+        "Edad Promedio": 68.0,
+        "Pretension Salarial": 9000
+    },
+    "secretario": {
+        "Candidatos": 2,
+        "Edad Promedio": 92.0,
+        "Pretension Salarial": 6120
+    },
+    "agente": {
+        "Candidatos": 2,
+        "Edad Promedio": 56.0,
+        "Pretension Salarial": 4687
+    },
+    "edecan": {
+        "Candidatos": 3,
+        "Edad Promedio": 21.0,
+        "Pretension Salarial": 9666
+    },
+    "dentista": {
+        "Candidatos": 2,
+        "Edad Promedio": 84.0,
+        "Pretension Salarial": 355
+    },
+    "profesora": {
+        "Candidatos": 3,
+        "Edad Promedio": 26.0,
+        "Pretension Salarial": 681
+    },
+    "director": {
+        "Candidatos": 2,
+        "Edad Promedio": 32.0,
+        "Pretension Salarial": 4999
+    },
+    "nada": {
+        "Candidatos": 3,
+        "Edad Promedio": 27.0,
+        "Pretension Salarial": 56666
     }
 }
