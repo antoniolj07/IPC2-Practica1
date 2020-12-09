@@ -13,7 +13,6 @@ class CalculateData:
             if candidate['puesto'] != '':
                 jobs.append(candidate['puesto'])
         jobs = list(dict.fromkeys(jobs))
-        print(jobs)
 
         resume = {}
         for job in jobs:
@@ -24,8 +23,6 @@ class CalculateData:
                 if candidate['puesto'] in job:
                     resume[job].append(candidate)
 
-        print(resume)
-
         results = {}
         for job in jobs:
             age = 0
@@ -33,17 +30,15 @@ class CalculateData:
             job_candidates = 0
             for can in resume[job]:
                 age = age + int(can['edad'])
-                salary = can['salario']
+                salary = int(can['salario'])
                 job_candidates = job_candidates + 1
 
             prom = (age/len(resume[job]))
 
             results[job] = {
+                'Candidatos': job_candidates,
                 'Edad Promedio': prom,
-                'Pretension Salarial': salary,
-                'Candidatos': job_candidates
-
+                'Pretension Salarial': salary
             }
-
-        print(results)
         self.results = results
+        print('Calculated!')

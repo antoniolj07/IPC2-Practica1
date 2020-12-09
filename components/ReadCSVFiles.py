@@ -7,15 +7,18 @@ class Read:
     def read_file(self):
         path = input('Please enter the path of the CSV file \n')
         rows = []
-        with open(path, 'r') as f:
-            lines = f.readlines()
-            for line in lines:
-                row = ''
-                for x in range(len(line)):
-                    if not line[x] in '\n':
-                        row = row + line[x]
-                rows.append(row)
-        self.read_attributes(rows)
+        try:
+            with open(path, 'r') as f:
+                lines = f.readlines()
+                for line in lines:
+                    row = ''
+                    for x in range(len(line)):
+                        if not line[x] in '\n':
+                            row = row + line[x]
+                    rows.append(row)
+            self.read_attributes(rows)
+        except:
+            print('Something went wrong :(')
 
     def read_attributes(self, rows):
         candidates = []
@@ -88,5 +91,3 @@ salario:    {}
             '''.format(candidate['id'], candidate['nombre'], candidate['apellido'], candidate['edad'], candidate['puesto'], candidate['salario']))
 
         self.candidates = candidates
-
-

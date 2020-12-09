@@ -1,0 +1,22 @@
+{
+    "Gerente": {
+        "Candidatos": 2,
+        "Edad Promedio": 20.0,
+        "Pretension Salarial": 20000
+    },
+    "Empleado": {
+        "Candidatos": 2,
+        "Edad Promedio": 28.0,
+        "Pretension Salarial": 10000
+    },
+    "Asistente": {
+        "Candidatos": 1,
+        "Edad Promedio": 19.0,
+        "Pretension Salarial": 5000
+    },
+    "Recepcionista": {
+        "Candidatos": 1,
+        "Edad Promedio": 45.0,
+        "Pretension Salarial": 4000
+    }
+}

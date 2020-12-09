@@ -1,9 +1,11 @@
 from components.ReadCSVFiles import Read
 from components.CalculateData import CalculateData
+from components.createJSON import CreateFile
 
 
 class Main:
     candidates = []
+    results = {}
 
     def __init__(self):
         self.print_menu()
@@ -38,11 +40,15 @@ Select an option:
         print('Calculate data')
         if len(self.candidates) != 0:
             calculate = CalculateData(self.candidates)
+            self.results = calculate.results
         else:
-            print('There are no candidates')
+            print('There are no candidates!')
 
     def generateJson(self):
-        print('generate json')
+        if len(self.results.keys()) != 0:
+            create = CreateFile(self.results)
+        else:
+            print('First you should calculate the data!')
 
 
 m = Main()
